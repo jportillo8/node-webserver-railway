@@ -14,7 +14,7 @@ app.set('view engine', 'hbs')
 hbs.registerPartials(__dirname + '/views/partials', function (err) {})
 
 // Servit static files from the React app
-app.use(express.static('publicpage'))
+app.use(express.static('public'))
 
 app.get('/', (req, res) => {
     res.render('home', {
